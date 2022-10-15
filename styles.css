@@ -9,18 +9,19 @@
 
 body {
     background-color: #E5E5E5;
-
+    background-image: url(./money.jpg);
+    background-size: cover;
 }
 
 .container {
     width: 375px;
     background-color: #F4F4F4;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 header {
-    background-color: #1B83E2;
+    background-color: rgba(0, 0, 0, 0.671);
     height: 66px;
 
 }
@@ -28,7 +29,7 @@ header {
 h1 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
     line-height: 18px;
     color: #F4F4F4;
@@ -58,10 +59,11 @@ select {
     cursor: pointer;
     outline: none;
     appearance: none;
-    padding: 16px;
+    padding: 14px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     margin-top: 6px;
     margin-bottom: 24px;
+    font-size: 16px;
 }
 
 input {
@@ -74,12 +76,12 @@ input {
     padding-left: 16px;
     outline: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-    font-size: 15px;
+    font-size: 16px;
 
 }
 
 button {
-    background: #1B83E2;
+    background: rgba(0, 0, 0, 0.651);
     border-radius: 25px;
     height: 48px;
     width: 100%;
@@ -105,7 +107,7 @@ button:active {
 }
 
 section {
-    border: 1px solid #1B83E2;
+    border: 1px solid #0a141f7a;
     border-radius: 4px;
 }
 
@@ -115,14 +117,14 @@ section {
 }
 
 .currency-name {
-    font-size: 14px;
-    color: #777777;
+    font-size: 17px;
+    color: #0c0202c0;
 }
 
 .currency-value {
     font-weight: bold;
     font-size: 20px;
-    color: #1B83E2;
+    color: #01060aad;
 }
 
 .arrow-image {
