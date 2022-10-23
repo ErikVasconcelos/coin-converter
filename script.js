@@ -3,7 +3,7 @@ const select = document.getElementById('currency-select')
 
 const dolar = 5.27
 const eur = 5.13
-const bitcoin = 0.0000096
+const bitcoin = 0.000010
 
 
 const convertValues = () => {
@@ -30,7 +30,9 @@ const convertValues = () => {
     }
 
     if (select.value === 'Bitcoin (BTC)') {
-        currencyValueText.innerHTML = inputReais * bitcoin
+        currencyValueText.innerHTML = new Intl.NumberFormat('de-DE',
+            { style: 'currency', currency: 'BTC' }
+        ).format(inputReais * bitcoin); // '€100.00'
     }
 }
 
